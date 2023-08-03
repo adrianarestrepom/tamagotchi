@@ -13,8 +13,6 @@ let petName = "";
 function Init(pet){
     const petName = pet;
     
-    petEnergy.textContent = `Energy:${energy}`;
-
     return{
         singing: function () {
             if (energy <= 90){
