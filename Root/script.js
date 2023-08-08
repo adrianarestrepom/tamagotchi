@@ -1,45 +1,31 @@
-const tamago = document.getElementsByClassName('tamagochi');
-const petImage = document.getElementById('eating');
-const petEnergy = document.querySelector('.energy-number');
-const buttonSinging = document.getElementById("buttonSinging");
-let petType = "";
-let energy = 100;
-let hunger = 0;
-let status;
-let petName = "";
+
+const botonDormir = document.getElementById('botonDormir');
+const botonComer = document.getElementById('botonComer');
+const botonEstirar = document.getElementById('botonEstirar');
+const botonPensar = document.getElementById('botonPensar');
+const botonInicio = document.getElementById('botonInicio');
+const imagen = document.getElementById('imagen');
 
 
+// Agrega manejadores de eventos a los botones
+botonInicio.addEventListener('click', function() {
+    imagen.src = `./assests/Bienvenida.gif`; // Cambia la ruta por la ruta real de tu imagen
+});
 
-function Init(pet){
-    const petName = pet;
-    
-    return{
-        singing: function () {
-            if (energy <= 90){
-                petImage.src = 'assets/joven.png';
-                petMessage.textContent = `${petName} is sleeping`;
-                activity = "slepping";
-                energy += 10;
-                petImage.src = "https://tenor.com/view/pokemon-jigglypuff-happy-smile-gif-4707068";
-                petEnergy.textContent = `Energy:${energy}`;
-                petMessage.textContent = `${petName} is sleeping`;
-                status = "singing";
-       
-        
-        
+botonDormir.addEventListener('click', function() {
+    imagen.src = `./assests/poohDormido.gif`; // Cambia la ruta por la ruta real de tu imagen
+});
 
-                return {
-                    energy,
-                    activity
-                }
+botonComer.addEventListener('click', function() {
+    imagen.src = `./assests/poohComiendo.gif`; // Cambia la ruta por la ruta real de tu imagen
+});
 
-            }
-            
-        }
+botonEstirar.addEventListener('click', function() {
+    imagen.src = `./assests/poohEstirando.gif`; // Cambia la ruta por la ruta real de tu imagen
+});
 
-    }
-}
+botonPensar.addEventListener('click', function() {
+    imagen.src = `./assests/poohPensando.gif`; // Cambia la ruta por la ruta real de tu imagen
+});
 
-const myPet = Init();
 
-buttonSinging.addEventListener('click', () => myPet.singing());
