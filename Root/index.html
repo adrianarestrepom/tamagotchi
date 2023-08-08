@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Winnie the Pooh</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Winnie the Pooh</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="tamagochi">
-        <ul><button id="botonInicio"> Inicio </button></ul>
-        <ul><button id="botonDormir"> Dormir </button></ul>
-        <ul><button id="botonComer"> Comer </button></ul>
-        <ul><button id="botonEstirar"> Estirar </button></ul>
-        <ul><button id="botonPensar"> Pensar </button></ul>
+      <h1>Tamagotchi Winnie the Pooh</h1>
+      <p>Estado: <span id="estado">Feliz</span></p>
 
-        <img id="imagen" src="" alt="Imagen">
-   
-    
-           
+      <ul>
+        <button class="boton" id="botonDormir">
+          <img class="icono" src="assests/dormido.png" alt="" />
+        </button>
+      </ul>
+      <ul>
+        <button class="boton" id="botonComer">
+          <img class="icono" src="assests/miel.png" alt="" />
+        </button>
+      </ul>
+      <ul>
+        <button class="boton" id="botonEstirar">
+          <img class="icono" src="assests/ejercicio.png" alt="" />
+        </button>
+      </ul>
+      <ul>
+        <button class="boton" id="botonPensar">
+          <img class="icono" src="assests/html.png" alt="" />
+        </button>
+      </ul>
+      <p>Energía: <span id="energia">100</span></p>
+      <img id="imagen" src="assests/Bienvenida.gif" alt="Imagen" />
+      <ul>
+        <button class="boton" id="botonInicio">Inicio</button>
+      </ul>
     </div>
-    
-
-</body>
-<script src="./script.js"></script>
+  </body>
+  <script src="./script.js"></script>
 </html>

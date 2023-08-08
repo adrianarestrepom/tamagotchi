@@ -1,3 +1,23 @@
+*{
+    box-sizing: border-box;
+    font-family:'Press Start 2P';
+    list-style: none;
+    margin: 0;
+    
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 200%;
+}  
+
+
+
 #imagen{
-    width: 40%;
+    width: 30%;
+}
+.icono{
+    width: 90%;
+}
+.boton{
+    width: 5%;
 }
